@@ -1,0 +1,25 @@
+{
+  "name": "BullionCapital",
+  "version": "0.0.0",
+  "description": "Chat application using the socket.io node library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuphu/BuillonCapital.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Anthony Guevara",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/zuphu/BuillonCapital/issues"
+  },
+  "homepage": "https://github.com/zuphu/BuillonCapital",
+  "dependencies": {
+    "express": "~4.12.0"
+  }
+}
