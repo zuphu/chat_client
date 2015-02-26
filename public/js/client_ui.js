@@ -29,7 +29,7 @@ ChatClient.prototype.listenNameResult = function() {
     socket.on("name result", function (nameResult) {
 	if (nameResult.success) {
     	    var msg = "Your name is: " + nameResult.name;
-	    $('#messages').append($('<li>').text(msg));
+	    $('#messages').append($('<li><b></b>').text(msg));
 	}
 	console.log(nameResult.message);
     });
@@ -39,6 +39,7 @@ ChatClient.prototype.listenLobbyChange = function() {
     console.log("Listening for 'name change'.");
     socket.on("join result", function (room) {
 	$('#messages').append($('<li>').text('You are now in room ' + room));
+	$('#channelName').text(room);
     });
 }
 
