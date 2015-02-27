@@ -26,7 +26,7 @@ var processInput = function (message, chatClient) {
 	case 'join':
 	    words.shift();
 	    var room = words.join(' ');
-            this.socket.emit('join room', room);
+            this.socket.emit('change room', room);
 	    break;
 	case 'nick':
 	    words.shift();
@@ -37,14 +37,17 @@ var processInput = function (message, chatClient) {
     	    var whisperee = words[1];
 	    words.splice(0, 2); /* explain this shit.. */
 	    var msg = words.toString().replace(/,/g , " ");
-	    this.socket.emit('whisper', { whisperTo: whisperee, text: msg });
+	    this.socket.emit('whisper', { whisperTo: whisperee,
+					  text: msg });
 	default:
 	    result = 'Unrecognized command.';
 	    break;
 	};
     }
     else{ /* Regular chat message */
-	var sendMsg = { room: $('#channelName').text(), text: message };
+	var sendMsg = { room: $('#channelName').text(),
+			text: message
+		      };
 	this.socket.emit('chat message', sendMsg);
     }
     
