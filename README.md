@@ -29,4 +29,5 @@ New connections are connected to default channel 'Lobby' and assigned a Guest# w
 
 Users in the same channel are able to send and receive messages to each other. Users in different channels will not be able to send and receive messages unless they are in the same channel. Using the /whisper command you can send messages to any user from any channel. Users are alerted when a user is disconnected from the same channel and alerted when a new user connects to the channel they are currently in.
 
-
+Future Updates:
+- add chat room PERSISTENCE
