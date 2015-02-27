@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    height: 100%;
+    font: 13px Helvetica, Arial;
+}
+form {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+form input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%;
+}
+form button {
+    width: 9%;
+    background: rgb(180, 224, 255);
+    border: none;
+    padding: 10px;
+}
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    overflow: auto;
+    border: 1px solid;
+}
+#messages li {
+    padding: 5px 10px;
+}
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+#info {
+    list-style-type: none;
+    margin: 50;
+    padding: 50;
+    font: 14px Times New Roman;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    background: yellow;
+}
+#top {
+    width: 100%;
+    background-color: #b0c4de;
+}
+#channelName {
+    width: 100%;
+    background-color: orange;
+
+}

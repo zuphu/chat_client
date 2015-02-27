@@ -1,15 +1,15 @@
 var socket = io();
 
 $(document).ready(function() {
-    var cc = new ChatClient(socket);
-    cc.listenAll();
+    $('#m').focus();
+    var cc = new ChatClient(socket); /* Initialize client socket listener object */
+    cc.listenAll(); /* Set all listeners client side */
     
     /* Send button will submit page */
     $('form').submit(function() {
-	var msg = $('#m').val();
-	processInput(msg, cc);
-//	socket.emit('chat message', $('#m').val());
-	$('#m').val('');
+	var msg = $('#m').val(); /* Get value from text box */
+	processInput(msg, cc); /* Check if regular message or command */
+	$('#m').val(''); /* Clear text box */
 	return false;
     });
 });

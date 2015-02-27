@@ -6,6 +6,7 @@ ChatClient.prototype.listenMessage = function() {
     console.log("Listening for 'chat message'.");
     socket.on("chat message", function (msg) {
 	$('#messages').append($('<li>').text(msg));
+	$('#messages').scrollTop($('#messages').prop('scrollHeight'));
     });
 }
 
