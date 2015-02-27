@@ -1,3 +1,8 @@
+/*
+Author: Anthony Guevara
+Date:   27 Feb 2015
+Client side socket.io code 
+*/
 var socket = io();
 
 $(document).ready(function() {
@@ -14,8 +19,9 @@ $(document).ready(function() {
     });
 });
 
+/* process user input depending on system command or regular message */
 var processInput = function (message, chatClient) {
-    if (message[0] == "/") { /* Special command messages start with '/' */
+    if (message[0] == "/") { /* System command messages start with '/' */
 	var words = message.split(' ');
 	message = words[0]
 	    .substring(1, words[0].length)
