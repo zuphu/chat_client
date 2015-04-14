@@ -1,4 +1,4 @@
-# Socket Chat Application
+# Socket.IO Chat Application
 socket.io chat application using the express framework
 
 Installation:
