@@ -1,4 +1,4 @@
-# BullionCapital
+# Socket Chat Application
 socket.io chat application using the express framework
 
 Installation:
