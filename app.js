@@ -8,7 +8,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var server = require('http').Server(app);
-var chatServer = require('./lib/chat_server'); /* Local module */
+var chatServer = require('./lib/chat_server.js'); /* Local module */
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 
 /* web server listening locally on port 3000*/
 server.listen(3000, function(){
-    console.log('listening on 127.0.0.1:3000. Open your browser to this address.');
+    console.log('application listening on 127.0.0.1:3000.');
 });
 
 /* socket.io connections are handled here */

@@ -5,7 +5,7 @@ body {
     font: 13px Helvetica, Arial;
 }
 form {
-    background: #000;
+    background: 'red';
     padding: 3px;
     position: fixed;
     bottom: 0;
@@ -27,7 +27,7 @@ form button {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 600px;
+    height: 530px;
     overflow: auto;
     border: 1px solid;
 }
